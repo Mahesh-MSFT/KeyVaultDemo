@@ -1,0 +1,14 @@
+﻿@inject Microsoft.Extensions.Configuration.IConfigurationRoot config
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Application uses</h2>
+        <ul>
+            <li>@config["sqlconn"]</li>
+        </ul>
+    </div>
+</div>
